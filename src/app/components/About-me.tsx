@@ -6,7 +6,7 @@ function AboutMe() {
     <div className="continer">
         <div className="row">
             <div className="img">
-                <img src="/about 1.jpg" alt="" />
+                <img src="/about 1.jpg" alt="img" />
             
             </div>
             <div className="about">
@@ -19,7 +19,7 @@ function AboutMe() {
                 <p>"I have successfully completed several projects ranging from small business websites to complex web applications."</p>
                 <p>Let's connect and collaborate to bring your ideas to life</p>
                 
-                <a href="" download="/Muneeb-Malik.pdf">
+                <a href='/' download="/Muneeb-Malik.pdf">
                     <button>Download CV</button>
                 </a>
                 
