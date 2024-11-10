@@ -3,10 +3,7 @@
     "next/core-web-vitals",
     "next/typescript",
     "next"
-  ],
-  "rules": {
-    "jsx-quotes": ["error", "prefer-double"]
-  }
+  ]
 }
 
 
