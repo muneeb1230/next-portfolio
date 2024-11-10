@@ -10,7 +10,7 @@ function Banner() {
             <p>Hi, This is me</p>
             <h1>Muneeb Ali</h1>
             <p>
-              I&apos;m a passionate web developer specializing in creating dynamic and responsive websites. With a strong foundation in HTML, CSS, and JavaScript, I bring innovative ideas to life through clean and efficient code. I&apos;m dedicated to delivering high-quality work that meets client needs and exceeds expectations.
+              I am a passionate web developer specializing in creating dynamic and responsive websites. With a strong foundation in HTML, CSS, and JavaScript, I bring innovative ideas to life through clean and efficient code. I am dedicated to delivering high-quality work that meets client needs and exceeds expectations.
             </p>
             <button>Contact me</button>
           </div>
