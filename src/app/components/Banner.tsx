@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 function Banner() {
@@ -16,7 +17,7 @@ function Banner() {
          </button>
         </div>
         <div className='img'>
-         <img src='/muneeb.jpg' alt='muneeb.jgp' />
+         <Image width={300} height={300} src='/muneeb.jpg' alt='muneeb.jgp' />
         </div>
 
      </div>

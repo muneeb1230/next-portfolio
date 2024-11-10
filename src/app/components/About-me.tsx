@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 function AboutMe() {
@@ -6,7 +7,7 @@ function AboutMe() {
     <div className='continer'>
         <div className='row'>
             <div className='img'>
-                <img src='/about 1.jpg' alt='img' />
+                <Image width={100} height={100} src='/about 1.jpg' alt='img' />
             
             </div>
             <div className='about'>
