@@ -1,21 +1,451 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth; /* Optional for smooth scrolling */
 }
 
+/* Global Styles */
+
+/* Background color */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #000000; /* Black background */
+  color: #f0f0f0; /* Default text color for the body (including paragraphs) */
+}
+
+/* Paragraphs */
+p {
+  color: #f0f0f0; /* Light gray text */
+  font-size: 18px; /* Adjust the size if needed */
+  line-height: 1.6; /* Better readability */
+}
+
+/* Headings */
+h1 {
+  color: #00ffff; /* Cyan color for H1 */
+  font-size: 36px; /* Adjust the size if needed */
+}
+
+h2 {
+  color: #39ff14; /* Neon green for H2 */
+  font-size: 30px; /* Adjust the size if needed */
+}
+
+/* Buttons */
+button {
+  background-color: #1e90ff; /* Electric blue background */
+  color: #ffffff; /* White text */
+  padding: 10px 20px; /* Add padding for better appearance */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+button:hover {
+  background-color: #3aa9ff; /* Slightly lighter blue on hover */
+}
+
+
+.header{
+  position: relative;
+  margin-top: 40px;
+}
+.header .container{
+  max-width: 84%;
+  margin: 0 auto;
+}
+.header .navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .menu ul {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.header ul li {
+  list-style: none;
+}
+.header ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #00ffff;
+}
+.header ul li a:hover{
+  color: burlywood;
+  transition: 0.3s;
+}
+
+ /* ///Banner section---------======= / */ 
+
+ .who_am{
+  position: relative;
+  /* background-color: beige; */
+  margin-top: 40px;
+  height: 100vh;
+}
+
+.who_am .container{
+  max-width: 84%;
+  margin: 0 auto;
+}
+.who_am .row{
+  display: flex;
+}
+
+
+.row p{
+  max-width: 60%;
+  margin-top: 20px;
+  line-height: 1.2;
+  margin-bottom: 10px;
+
+}
+.row h1{
+  margin-top: 18px;
+}
+.who_am .img img{
+  width: 300px;
+  margin-right: 70px;
+  border-radius: 10px;
+}
+
+.who_am button{
+  margin-top: 30px;
+  font-size: 16px;
+  padding: 10px; 
+}
+
+/* About me --------======= */
+
+.about-me{
+  position: relative;
+  padding-top: 10px;
+}
+.about-me .continer{
+  max-width: 84%;
+  margin: 0 auto;
+}
+
+.about-me .row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+
+.about-me img{
+  width: 100%;
+}
+
+.about-me .about  p{
+  max-width: 90%;
+}
+
+.about-me .about #h2{
+  font-size: 20px;
+}
+
+.about-me .about button{
+  margin-top: 20px;
+}
+
+/* My Services---------========= */
+
+.my-service{
+  position: relative;
+  margin-top: 70px;
+}
+.my-service .container {
+  max-width: 84%;
+  margin: 0 auto;
+}
+
+.my-service .container h2 {
+  justify-content: center;
+  display: flex;
+}
+
+.my-service .container #para {
+  text-align: center;
+  margin-top: 20PX;   
+}
+
+.my-service .container .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 40px; /* Boxes ke beech ka space */
+  margin-top: 40PX;
+}
+
+.my-service .container .row .box {
+  background-color: #171717;
+  padding: 40px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.my-service .container .row .box img {
+  /* max-width: 100%; */
+  margin-bottom: 15px;
+}
+.my-service .container .row .box #line{
+  width: 50px;
+  height: 3px;
+  margin: 10px auto 10px;
+  background-color: #17a926;
+}
+
+.my-service .container .row .box:hover {
+  background-color: #333;
+  transition: 0.5s;
+  
+}
+
+/* Skills-------------------======= */
+
+.skills-section {
+  padding: 50px ;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  position:relative
+}
+
+.skills-section h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  padding: 28px;
+} 
+
+.skills-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.skill-box {
+  text-align: center;
+  padding: 26px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.skill-box h3 {
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #333;
+}
+
+
+/* projects section -----====== */
+
+.project{
+  position: relative;
+  margin-top: 30px;
+}
+.project .container {
+  max-width: 84%;
+  margin: 0 auto;
+}
+
+.project .container h2 {
+  justify-content: center;
+  display: flex;
+  font-size: 40px;
+}
+.project .container #para {
+  text-align: center;
+  margin-left: 90px;
+  margin-top: 30px;
+}
+
+.project .container .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px; /* Boxes ke beech ka space */
+  margin-top: 40PX;
+}
+.project .container .row .box{
+  border-radius: 8px;
+}
+
+.project .container .row .box img {
+  width: 90%;
+}
+
+.project .container .row .box #par3{
+  margin-top: 60px;
+}
+
+/* Contact section-----------======= */
+
+.contact{
+  position: relative;
+  margin-top: 100px;
+}
+.contact .container {
+  max-width: 84%;
+  margin: 0 auto;
+}
+.contact .container h2{
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+.contact .container #para{
+  text-align:  center;
+  margin-top: 18px;
+  font-size: 20px;
+}
+.contact .container .row{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+}
+.contact .container .row .box{
+  margin-top: 38px;
+  text-align: center;
+}
+
+.contact .container .row .box img{
+  border: solid 1px #333;
+  padding: 26px;
+  border-radius: 50%;
+  background-color: #333;
+  align-items: center;
+  margin-right: 100px;
+  margin-bottom: 18px;
+}
+
+.contact .container .row .box .para{
+  font-weight: 800;
+  font-size: 20px;
+}
+
+
+
+.contact .row-2 #img-contat{
+ 
+  border-radius: 10px;
+}
+.contact .row-2 {
+  display: flex;
+  margin-top: 90px;
+  gap: 48px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  gap: 15px; 
+  margin-left: 30px;
+  
+}
+
+.name-fields {
+  display: flex;
+  gap: 15px;
+  
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer section-----==== */
+
+.footer {
+  /* background-color: #2d2d2d; */
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  max-width: 250px;
+  line-height: 1.6;
+}
+
+.social-links .icons a img {
+  
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-links .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#fb-1{
+  max-width: 100px;
+}
+
+#link{
+  max-width: 100px;
+}
+#wat{
+  max-width: 74px;
+;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 14px;
+  border-top: 1px solid #555;
+  padding-top: 10px;
+  color: #aaa;
+  margin-left: 40%;
 }
